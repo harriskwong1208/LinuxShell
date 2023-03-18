@@ -11,14 +11,12 @@ This shell prgroam is an implemention of a linux shell, it behaves similarly to 
     There are many commands that can be entered for the shell to execute. One of them is I/O redirection , by entering "< [file]", it is asking to change the file descriptor of stdin to the [file]. "> [file]" and ">> [file]" are asking to change file descriptor of stdout to file (">>" to append, ">" to overwrite). An example
  of redirection: "cat  file1 > file2", this tells the shell to execute cat on file1 and print the 
 result to stdout (which is now file2). Another command is pipes, this command "|" allows one process to communicate with the other. An example of pipe: "cat file1 | wc", one process execute cat file
-and another process (wc) on the other side of "|" will return number of lines, word count, byte and characters count from the cat process. The "&" command can be used to support background 
-processing of programs. An example of background processing: "program1 & program2 &", the programs infront of "&" will execute in the background and launch after it returns to the shell. 
+and another process (wc) on the other side of "|" will return number of lines, word count, byte and characters count from the cat process. The "&" command can be used to support background processing of programs. An example of background processing: "program1 & program2 &", the programs infront of "&" will execute in the background and launch after it returns to the shell. 
+
 Buildin commands are coded commands which is different compared to the external commands. The manuel for buildin commands: 
-a.  cd <directory> - Change the current default directory to  
-<directory>. If the <directory> argument is not present, report 
-the current directory. If the directory does not exist an 
-appropriate error should be reported. This command should also 
-change the PWD environment variable.  
+
+a.  cd <directory> - Change the current default directory to  <directory>. If the <directory> argument is not present, report the current directory. 
+ If the directory does not exist an appropriate error should be reported. This command should also change the PWD environment variable.  
 b.  clr - Clear the screen. 
 c.  dir <directory> - List the contents of directory <directory>. 
 d.  environ - List all the environment strings. 
