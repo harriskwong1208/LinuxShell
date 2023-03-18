@@ -1,0 +1,7 @@
+cd .. .
+echo cis3207
+touch blank.txt
+ls -la | grep main
+cat < helpmanuel.txt 
+ls -la >> blank.txt .
+quit
